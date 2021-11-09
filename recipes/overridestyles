@@ -1,0 +1,563 @@
+/*
+Implementation Skeleton v3 - 12/6/18
+Add styles to overwrite customer CSS, USE WITH CAUTION.
+*/
+
+/* A-Z Index */
+ul.horizontal-list {
+	padding-top: 20px;
+}
+ul.horizontal-list li {
+	display: inline;
+	padding: 10px;
+	list-style-type: none;
+	margin-left: 0.5rem;
+}
+ul.horizontal-list li a{
+	/* 	color: #4F2984!important; */
+}
+ul.horizontal-list li:before {
+	background-image: none;
+}
+ul.horizontal-list ~ ul li{
+	margin-left: 3.5rem;
+}
+/* END A-Z Index */
+
+.jumbotron.bg-image {
+	background: no-repeat center / 100%;
+}
+
+
+/* Start CSS for Pre-Footer Feature */
+.pre-footer{
+	background-color:#e9ecef;
+	text-align:center;
+}
+.pre-footer-margins{
+	margin:25px;
+	padding:15px;
+}
+/* END CSS for Pre-Footer Feature */
+
+
+/* LDP Hero Slider */
+.ou-home-slider{
+	max-height:1300px;
+}
+
+.hero-title{
+	text-align:left;
+	position: relative;
+	bottom: 200px;
+}
+
+@media screen and (max-width: 600px) {
+	.hero-title {
+		position: relative;
+		bottom: 100px;
+	}
+}
+
+.ou-video-overlay{
+	z-index: 999;
+	color: white;
+}
+
+.ou-padding{
+	padding: 0px 15px 0px 15px;
+}
+
+.ou-padding .card-body{
+	text-align:center;
+}
+
+.ou-space{
+	margin:15px 0px 15px 0px;
+	display: block;
+}
+
+.ou-space-2x{
+	margin:30px 0px 30px 0px;
+	display: block;
+}
+
+
+
+/* A-Z Index */
+ul.horizontal-list {
+	padding-top: 20px;
+}
+ul.horizontal-list li {
+	display: inline;
+	padding: 10px;
+	list-style-type: none;
+	margin-left: 0.5rem;
+}
+ul.horizontal-list li a{
+	/* 	color: #4F2984!important; */
+}
+ul.horizontal-list li:before {
+	background-image: none;
+}
+ul.horizontal-list ~ ul li{
+	margin-left: 3.5rem;
+}
+/* END A-Z Index */
+
+
+/* mobile nav */
+@media (max-width: 700px) {
+	.ou-nav{
+		display:none!important;
+	}
+}
+
+@media (min-width: 701px) {
+	.ou-mobile{
+		display:none!important;
+	}
+}
+
+
+@media (min-width: 801px) {
+	.ou-row{
+		display:flex!important;
+	}
+}
+
+
+
+/* Radio and Checklist Input Fix */
+
+input[type=checkbox], input[type=radio] {
+	margin-right: 5px !important;
+}
+
+
+/*Fix Edit Buttons */
+a[data-label='slider'] {
+	position: relative;
+	z-index: 9999;
+}
+
+a[data-label='video'] {
+	position: relative;
+	z-index: 9999;
+}
+
+.ou-form .input-group {
+	display: block;
+}
+
+
+/* Social Media Icons Override */
+
+a.share-icon {
+	position: relative;
+}
+
+.stButton
+{
+	position: absolute !important;
+	opacity: 0 !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	z-index: 9999 !important;
+}
+
+
+/* Privacy Bar CSS */
+.privacy-container{
+	background: rgba(34, 34, 34, .9);
+	color: #fff;
+	display:none;
+	position: fixed;
+	z-index: 9999999;
+	bottom: 0%;
+	width: 100%;
+	padding: 20px 40px;
+}
+.privacy-container .privacy-bar-content a{
+	color: #ffffff;
+}
+.privacy-container .privacy-bar-content{
+	font-size: 98%;
+	padding-top: 10px;
+
+}
+.privacy-container .privacy-bar-content p{
+	margin: 0;
+}
+.privacy-container .privacy-bar-close-button{
+	float:right;
+	padding: 0.650rem 0.9375rem;
+	margin-right: 2rem;
+}
+
+.privacy-container button.button-close {
+	color: white !important;
+	font-size: 2rem !important;;
+}
+
+/* Pagination Override */
+.page-item.active .page-link {
+	background-color: var(--mcteal) !important;
+	border-color: var(--mcteal) !important;
+	/* 	color: white ; */
+}
+
+
+.page-link {
+	color: var(--mcteal);
+}
+
+.page-link:hover {
+	color: #092D5A;
+}
+
+/* Modal HubSpot Form Input Fixes */
+.hubspot-wrap--modal .hbspt-form .field.hs-fieldtype-radio, .hubspot-wrap--modal .hbspt-form .field.hs-fieldtype-booleancheckbox {
+	padding: 15px !important;
+}
+
+.hbspt-form .hs-fieldtype-textarea.field.filled label {
+	padding-right: 3px;
+	font-size:12.5px;
+}
+
+.hbspt-form .field label {
+	padding-right: 7px;
+}
+
+.hbspt-form .field textarea {
+	height: auto;
+	position: relative;
+	padding-top: 40px;
+	min-height: 145px;
+}
+
+
+.section-snippet.section-tabs .section-title h4 {
+	line-height: 54px;
+	padding-top: 10px;
+}
+
+/*Header Imitation Class */
+.h1 {
+	font-family: var(--font2);
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 54px;
+	color: var(--mcblue);
+}
+.h2 {
+	font-weight: 600;
+	font-size: 34px;
+	color: var(--mcblue);
+}
+.h3 {
+	font-weight: 600;
+	font-size: 30px;
+	text-align: left;
+	color: var(--mcblue);
+}
+.h4 {
+	font-weight: 600;
+	font-size: 28px;
+	color: var(--mcblue);
+}
+.h5{
+	font-weight: 600;
+	font-size: 24px;
+	color: var(--mcblue);
+}
+.h6{
+	font-weight: 600;
+	font-size: 22px;
+	color: var(--mcblue);
+}
+
+@media all and (max-width: 1023px) {
+	.h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.h2 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.h3 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.h4 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.h5{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.h6{
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+/* general page/blog samll devices */
+@media all and (max-width: 767px) {
+	.h1 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.h2 {
+		font-size: 22px;
+		line-height: 25px;
+	}
+	.h3 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.h4 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.h5{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.h6{
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+/* Paragraph Imitation Class */
+.paragraph {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size:18px;
+	font-weight: 400;
+	font-family: var(--font1);
+	color: var(--mcdarkgray);
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Hero Banner */
+.page-hero.hero-teal {
+	background-color: var(--mcorange);
+}
+
+.page-hero.hero-teal {
+	background-color: var(--mcteal);
+}
+
+.page-hero.hero-green {
+	background-color:#005e5d;
+}
+
+.page-hero.hero-red {
+	background-color:var(--mcred);
+}
+
+.page-hero.hero-darkorange {
+	background-color:var(--mcorangedark);
+}
+
+.page-hero.hero-darkgray {
+	background-color:var(--mcdarkgray);
+}
+
+
+/* Inline Link */
+a.link {
+	color: var(--mcteal);
+	text-decoration: none;
+	font-weight: 600;
+	position: relative;
+}
+
+a.link:after {
+	content: '';
+	width: 8px;
+	height: 11px;
+	display: inline-block;
+	background-image: url(../images/icon-chevron-small.svg);
+	margin-left: 5px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	transform: translate(0px, 0px);
+	background-size: contain;
+	transition: all 300ms;
+}
+
+a.link:hover {
+	color: var(--mcorange);
+	text-decoration: none;
+}
+
+a.link:hover:after {
+	background-image: url(../images/icon-chevron-small-over.svg);
+	transform: translate(4px, 0px);
+}
+
+/* Dark Mode Fix for Two Column Feature Snippet */
+.feature-two-columns.dark-mode {
+	background-color: var(--mcblue);
+}
+
+/* Feature Section Padding Fix */
+@media (min-width: 775px) {
+	.section-feature {
+		padding: 2.5rem 2rem;
+	}
+}
+
+/* Global Image Responsive Fix */
+
+.content img {
+	max-width: 100% !important;
+	height: auto;
+}
+
+/* Footer Fix */
+.footer {
+	padding-bottom: 3px;
+}
+
+.footer-bottom {
+	padding-top: 15%;
+}
+
+
+/* Hero Banner Fixes */
+.jumbotron.jumbotron-fluid.hero-short {
+	padding: 5% 0;
+}
+
+.page-hero .jumbotron h2 {
+	margin-top: 3%;
+}
+
+.page-hero .jumbotron p {
+	margin-top: 3%;
+}
+
+/* Text Bar Fixes. Remove Bottom margin */
+.text-bar__content > * {
+	margin-bottom: 0 !important;
+}
+
+/* Top Nav Promo Area Fix */
+.nav-promo p {
+	display: block !important;
+}
+
+.navbar-nav .dropdown-menu p {
+	display: block !important;
+}
+
+/*Bottom Links FIX */
+.footer .nav-item p {
+	cursor: auto;
+}
+
+/*Anchor Links Fix */
+@media (min-width: 1024px) {
+	.anchor::before {
+		content: "";
+		display: block;
+		height: 135px;
+		margin: -135px 0 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	.anchor::before {
+		content: "";
+/* 		display: block; */
+		height: 110px;
+		margin: -110 0 0;
+	}
+}
+
+/* Hero Banner Image and Text Overlap Fix */
+@media (max-width:1200px) {
+	.jumbotron.jumbotron-fluid {
+		max-height: 530px;
+	}
+}
+
+/* Hero Banner Image and Text Overlap Fix */
+@media (max-width:990px) {
+	.jumbotron.jumbotron-fluid {
+		max-height: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.whitepaper-hero .jumbotron.jumbotron-fluid {
+		max-height: none;
+	}
+}
+
+/* Mobile Pagination Issue */
+@media (max-width: 600px) {
+	ul.pagination {
+		font-size: 15px;
+	}
+}
+
+/*Dropdown Filter Footer Overlap Fix */
+.row-filter .dropdown-menu.show {
+	z-index: 9997;
+}
+
+/*Logo SVG Styling */
+
+.navbar-brand svg {
+	width: 250px;
+}
+
+.logo-blue {
+	fill: #002157;
+}
+
+.logo-orange {
+	fill: #d14124;
+}
+
+/* Updated spacing for whitepaper headings (#70020) */
+@media (min-width: 768px){
+	.py-3 h2.h1 {
+		margin-top: 3rem;
+	}
+}
+
+/* Updated styling for hbspt form case (#69776) */
+.hbspt-form .hs_email.filled label {
+	background-color: #fff;
+	margin-right: 7px;
+	top: 10px;
+	pointer-events: initial;
+}
+.hbspt-form .hs_email.filled label a, .hbspt-form .hs_email.filled label:visited {
+	color: var(--mcred);
+	font-size: 12px;
+}
+.hbspt-form .hs_email.filled label a:hover {
+	color: var(--mcorangedark);
+}
+.hbspt-form .hs_email.filled input {
+	outline-color:var(--mcred);
+	background-color: #fff;
+	border-color:var(--mcred);
+	color:var(--mcred);
+}
+/*update for: 70684 */
+.hbspt-form .cookie-reset-container + .field label {
+top: 10px;
+}
