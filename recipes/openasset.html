@@ -16,9 +16,28 @@
     </style>
     
 	<script> 
-		var pfiframe = document.getElementById('PFTest');
-		var iframedheader = pfiframe.contentWindow.document.querySelector('.site-header');
-		iframedheader.style.display = 'none';
+	window.onload = () => {
+    	setTimeout(() => {
+      
+        var pfiframe = document.getElementById('PFTest');
+	var iframedheader = pfiframe.contentWindow.document.querySelector('.site-header');
+        if(iframeheader) {
+            iframedheader.style.display = 'none';
+        }
+		
+        
+
+    //   const CTA = document.getElementById('qa-cta-button-body');
+    //   if(CTA){
+    //     CTA.style.backgroundColor = '#04d9d7';
+    //   }
+
+
+      
+    
+    
+    },1000)
+  }
 	</script>
 	
 </head>
