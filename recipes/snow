@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-9">
+    <title>Lasagna</title>
+    <style>
+    #lasagna {
+        height: 500px;
+        width: auto;
+    }
+    </style>
+  <!-- From WS Demo LP-->
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_extralight/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_extralightitalic/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_italic/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_light/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_lightitalic/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_regular/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_semibold/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/quietsans_semibolditalic/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/orion_books_text_font/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/orion_e_commerce_font/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/orion_communication_font/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/orion_media_font/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/orion_edition_font/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/orion_archives_font/font.css" media="all" />
+<link rel="stylesheet" href="https://www.snowsoftware.com/sites/default/files/fontyourface/local_fonts/orion_hardware_software_font/font.css" media="all" />
+<link rel="shortcut icon" href="/sites/default/files/favicon-32x32.png" type="image/png" />
+
+<link rel="stylesheet" media="all" href="https://snowsoftware.com/sites/default/files/css/css_fyoyKoU4woekMhNWiZFJAg_iinaZbYPseltJzpMJexM.css" />
+<link rel="stylesheet" media="all" href="https://snowsoftware.com/sites/default/files/css/css_7DFOrI8kQycqvMIcuUyKGpFUfR-xAN_McjnIf3wI6NQ.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,500,700,900" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Montserrat:400,700" />
+<link rel="stylesheet" media="all" href="https://snowsoftware.com/sites/default/files/css/css_H5o0MWoBh5fqOFy1jXxlmp3mW1wGGDtozM3gmjn5c_E.css" />
+<!-- From WS Demo LP-->
+
+<!-- PS -->
+<link rel="stylesheet" href="https://go.snowsoftware.com/rs/377-PWR-208/images/2020brand.css">
+<!-- PS -->
+
+<!-- From DY -->
+<style>
+.page-node-1446, .page-node-1606, .page-node-2636 {
+#mktoForm_5089, #mktoForm_5158, #mktoForm_5308 {
+    background-color: #E6E6E6 !important;
+    padding: 35px;
+    margin-bottom: 50px;
+    display: inline-block;
+    float: left;
+    width: 100% !important;
+    -webkit-box-shadow: 0px 4px 11px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 0px 4px 11px 0px rgba(133,133,133,1);
+    box-shadow: 0px 4px 11px 0px rgba(133,133,133,1);
+    padding-bottom: 45px;
+    option {
+      font-family: "QuietSans-Regular" !important;
+    }
+    .mktoOffset {
+      width: 35px !important;
+    }
+    .mktoFormRow {
+      width: 100% !important;
+
+    }
+    //styles for the labels that float to the left of the form fields
+    #Lbldescription, #LblTitle, #LblIndustry, #LblCompany, #LblNumberOfEmployees, #LblCountry_Region_New__c_contact, #LblState, #LblPhone, #LblEmail, #LblLastName, #LblFirstName, #LblformComments {
+      font-family: "QuietSans-ExtraLight" !important;
+      display: inline-block;
+      float: left;
+      width: 35% !important;
+      //flex-direction: row-reverse;
+      //justify-content: flex-end;
+      font-size: 17px;
+      .mktoAsterix {
+        display:block;
+        width: 8px;
+        margin-left: 3px;
+        font-family: "QuietSans-SemiBold" !important;
+        font-size: 15px;
+        float: right;
+      }
+
+    }
+    // hide asterisks
+
+    #Lbldescription, #LblEmail_opt_in__c {
+      .mktoAsterix {
+        visibility: hidden !important;
+        display: none !important;
+      }
+    }
+    // error message style
+    .mktoErrorMsg {
+      color: #ff0000 !important;
+      font-family: "QuietSans-SemiBold" !important;
+    }
+    //styles for the input fields
+    #Title, #Industry,#Company, #NumberOfEmployees, #Country_Region_New__c_contact, #State, #Phone, #Email, #LastName, #FirstName, #description, #formComments {
+      width: 60% !important;
+      display: inline-block;
+      float: right;
+      font-size: 18px;
+      border: solid 1px;
+      margin-bottom: 10px;
+    }
+    //opt in checkbox text area
+    #LblEmail_opt_in__c {
+      display: inline-block;
+      float:right;
+      width: 8px;
+      .mktoAsterix {
+        display: inline-block;
+      }
+    }
+    #LblmktoCheckbox_62103_0 {
+      display:inline-block;
+      float: right;
+      width: 58%;
+      font-size: 15px !important;
+      font-family: "QuietSans-ExtraLight" !important;
+    }
+    // hide the comments asterisk
+    #LblformComments {
+      .mktoAsterix {
+        visibility: hidden !important;
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+      }
+    }
+    //styles for the submit button
+    .mktoButtonRow {
+      display: inline-block;
+      float:left;
+      clear: both;
+      width: 100%;
+      margin-top: 10px;
+      .mktoButtonWrap {
+        display: inline-block;
+        float: right;
+        width: 60%;
+        button {
+          border: 2px solid #00b2d5 !important;
+          border-radius: 100px;
+          display: inline-block;
+          padding: 4px 35px;
+          background-color: #00b2d5;
+          color: #ffffff !important;
+          &:hover {
+            background-color: #ffffff;
+            color: #00b2d5 !important;
+          }
+
+        }
+      }
+    }
+    //clear any odd floats to clean up rows
+    .mktoClear {
+      clear:both;
+      display: inline-block;
+      float: left;
+      width: 100%;
+    }
+  }
+}
+
+
+// breakpoints for contact us, request demo, and service page forms
+@media(max-width: $screen-md-min) {
+    .page-node-1446, .page-node-1606, .page-node-2636 {
+.main-page {
+#block-gaviasblockbuidercontactuspage-2, #block-gaviasblockbuiderrequestademopage,#block-gaviasblockbuiderblogsubscriptionpage {
+#mktoForm_5089, #mktoForm_5158, #mktoForm_5308 {
+            max-width: 695px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            float: none !important;
+            display: block !important;
+            .mktoFormRow {
+              display: block !important;
+            }
+          }
+		  
+
+}
+}}}
+@media(max-width: $screen-sm-max){
+.page-node-1446, .page-node-1606, .page-node-2636 {
+    .main-page {
+      #mktoForm_5089, #mktoForm_5158,  #mktoForm_5308 {
+        margin-bottom: 0px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(133,133,133,1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(133,133,133,1);
+        box-shadow: 0px 0px 0px 0px rgba(133,133,133,1);
+        #Title, #Industry,#Company, #NumberOfEmployees, #Country_Region_New__c_contact, #State, #Phone, #Email, #LastName, #FirstName, #description {
+          width: 100% !important;
+          display: inline-block;
+          float: left;
+          font-size: 18px;
+          border: solid 1px;
+          margin-bottom: 10px;
+          clear: both;
+        }
+          #Lbldescription, #LblTitle, #LblIndustry, #LblCompany, #LblNumberOfEmployees, #LblCountry_Region_New__c_contact, #LblState, #LblPhone, #LblEmail, #LblLastName, #LblFirstName {
+            width: 70%;
+          }
+          #LblmktoCheckbox_62103_0 {
+            width: 100%;
+          }
+      }
+      .after_content {
+        //background-image: url('#{$base-theme-image-path}/marketoforms-bg-mobile.png');
+        background-repeat: repeat-x;
+        background-position: 0px 0px;
+      }
+    }
+  }
+  }
+
+
+</style>
+<!-- From DY -->
+
+</head>
+
+<body>
+    <div class "nav">
+        <a href = "../index.html">Home</a>
+    </div>
+    <div id = "recipeimage">
+        <h1>LP Form</h1>
+<script src="//app-lon04.marketo.com/js/forms2/js/forms2.min.js"></script>
+<form id="mktoForm_5158"></form>
+<script>MktoForms2.loadForm("//app-lon04.marketo.com", "377-PWR-208", 5158, function(form) {
+	form.onSuccess(function(){
+  	var vals = form.vals();
+  	window.parent.postMessage({
+    	conversionUrl: document.location.href,
+    	referrer: document.referrer,
+    	email: vals.Email,
+    	lookbookExternalForm: true
+  	}, "*");
+  	ga('send', 'event', 'forms', 'submit', 'PathFactory');
+  	return true;
+	});
+});
+</script>    
+       
+</body>
