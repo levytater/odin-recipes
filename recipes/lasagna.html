@@ -34,6 +34,7 @@
         console.log(windowlocation);
         var parentlocation = window.parent.location;
         console.log(parentlocation);
+        window.parent.postMessage({ parentlocation: parentlocation }, document.location.origin);
     </script>
     <div class "nav">
         <a href = "../index.html">Home</a>
