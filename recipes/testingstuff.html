@@ -28,18 +28,11 @@
   </script>
 	<script src="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.js"></script> <link href="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.css" rel="stylesheet" type="text/css" />
 	<script>
-		
-		function setPfConsent(status){
-if(pfConsentStatus()!=true &&status==true)
-    return pfCookieResponse(true);
-if (pfConsentStatus() != false && status==false)
-    pfCookieResponse(false);
-}
 		    window.onload = function(){
     			setTimeout(function(){
-        			setPfConsent(true);
-				console.log("I set pfCookie Consent to true");
-    }, 10000)
+        			cookieResponse(true);
+				console.log("I set cookieResponse to true");
+    }, 5000)
 }
 	</script>
 </head>
