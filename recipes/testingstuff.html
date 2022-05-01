@@ -28,9 +28,16 @@
   </script>
 	<script src="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.js"></script> <link href="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.css" rel="stylesheet" type="text/css" />
 	<script>
+		
+		function setPfConsent(status){
+if(pfConsentStatus()!=true &&status==true)
+    return pfCookieResponse(true);
+if (pfConsentStatus() != false && status==false)
+    pfCookieResponse(false);
+}
 		    window.onload = function(){
     			setTimeout(function(){
-        			pfCookieResponse(true)
+        			setpfCookieResponse(true)
     }, 10000)
 }
 	</script>
