@@ -7,9 +7,24 @@
 
 <body>
     
-<h3> Updated 458 ET </h3>
+<h3> Updated 1158 ET </h3>
 	
-<script src="//044-UAP-113.mktoweb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1405"></form> <script>MktoForms2.loadForm("//044-UAP-113.mktoweb.com", "044-UAP-113", 1405);</script>
+<div>
+    <script src="//044-UAP-113.mktoweb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1405"></form> 
+    <script>
+       // MktoForms2.loadForm("//go.uptake.com", "731-FHQ-268", 2145);
+       MktoForms2.loadForm("//044-UAP-113.mktoweb.com", "044-UAP-113", 1405, function(form) {
+          form.onSuccess(function(values, followUpUrl){
+              var em = values.Email;
+              var gotoStr = "https://levshq.lookbookhq.com/c-level";
+              if (gotoStr !== "") {
+                      document.location.href = gotoStr + (gotoStr.indexOf("?") > -1 ? "&" : "?") + "lb_email=" + em;
+                      return false;
+                  }
+              });
+          });
+    </script>
+</div>
 	
 </body>
 </html>
