@@ -33,7 +33,7 @@
 function listenToQualified() {               
   window.addEventListener('message',function(e){
     if (e.data.value) {
-      if (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened' && document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") == "true") {
+      if (e.data.value.name == 'maximize' && document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") == "true") {
         document.getElementById('qa-guide-sidebar').click();
       }
     }
