@@ -36,6 +36,7 @@ function listenToQualified() {
       setTimeout(function(){
       if (e.data.value.name == 'maximize' && document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") == "true") {
         document.getElementById('qa-guide-sidebar').click();
+	console.log("Guide Hidden");
       }
     }, 500)
   }
