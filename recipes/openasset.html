@@ -29,6 +29,21 @@
       
   </script>    
 
+<script>
+function listenToQualified() {               
+  window.addEventListener('message',function(e){
+    if (e.data.value) {
+      if (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened' && document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") == "true") {
+        document.getElementById('qa-guide-sidebar').click();
+      }
+    }
+  })
+}
+listenToQualified();
+</script>
+	
+	
+	
 </head>
 
 <body>
