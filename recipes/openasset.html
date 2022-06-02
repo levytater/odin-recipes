@@ -29,23 +29,7 @@
       
   </script>    
 
-<script>
-function listenToQualified() {               
-  window.addEventListener('message',function(e){
-    if (e.data.value) {
-      var guideExpanded = document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") // has string value of "true" or "false"
-      if ((e.data.value.name == 'maximize' || e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened') && guideExpanded == "true")
-      {
-        document.getElementById('qa-guide-sidebar').click();
-      }
 
-  }
-})
-}
-
-window.onload = function listenToQualified();
-
-</script>
 	
 	
 	
@@ -54,8 +38,22 @@ window.onload = function listenToQualified();
 <body>
 
     
-<h3> Qualified Interaction Test 1049 AM </h3>
+<h3> Qualified Interaction Test 1053 AM </h3>
 
-	
+<script>
+function listenToQualified() {               
+  window.addEventListener('message',function(e){
+    if (e.data.value) {
+      var guideExpanded = document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") // has string value of "true" or "false"
+      if ((e.data.value.name == 'maximize' || e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened') && guideExpanded == "true") {
+        document.getElementById('qa-guide-sidebar').click();
+      }
+    }
+  })
+}
+
+window.onload = function listenToQualified()
+
+</script>
 
 </body>
