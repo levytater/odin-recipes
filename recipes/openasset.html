@@ -41,7 +41,7 @@
 <h3> Qualified Interaction Test 1053 AM </h3>
 
 <script>
-function listenToQualified() {               
+window.onload = function listenToQualified() {               
   window.addEventListener('message',function(e){
     if (e.data.value) {
       var guideExpanded = document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") // has string value of "true" or "false"
@@ -51,9 +51,9 @@ function listenToQualified() {
     }
   })
 }
-
-window.onload = function listenToQualified()
-
 </script>
+
+
+
 
 </body>
