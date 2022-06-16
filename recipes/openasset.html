@@ -45,7 +45,7 @@ window.onload = function listenToQualified() {
   window.addEventListener('message',function(e){
     var guideExpanded = document.getElementById("qa-guide-sidebar")
     if (e.data.value) {
-      if ((e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
+      if (e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
           if(guideExpanded && guideExpanded.getAttribute("aria-expanded")) {  // has string value of "true" or "false")
               document.getElementById('qa-guide-sidebar').click();
       }
@@ -53,6 +53,7 @@ window.onload = function listenToQualified() {
 }
 
 </script>
+
 
 
 
