@@ -32,19 +32,12 @@
 
 
 	
-	
-	
-</head>
-
-<body>
-
-    
-<h3> Qualified Interaction Test 1026 AM </h3>
-
 <script>
-window.onload = function listenToQualified() {               
+
+window.onload = function listenToQualified() {
+  console.log("onload listenToQualified function ran")       
+  var guideExpanded = document.getElementById("qa-guide-sidebar")
   window.addEventListener('message',function(e){
-    var guideExpanded = document.getElementById("qa-guide-sidebar")
     if (e.data.value) {
         if (e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
           console.log("Qualified message - maximize or opened. Message is:")
@@ -56,7 +49,15 @@ window.onload = function listenToQualified() {
     }
   })
 }
-</script>
+</script>	
+	
+</head>
+
+<body>
+
+    
+<h3> Qualified Interaction Test 1026 AM </h3>
+
 
 
 
