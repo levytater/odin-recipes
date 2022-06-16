@@ -15,20 +15,7 @@
 	   } 
     </style>
  
-<script>
-window.onload = function listenToQualified() {               
-  window.addEventListener('message',function(e){
-    var guideExpanded = document.getElementById("qa-guide-sidebar")
-    if (e.data.value) {
-        if (e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
-            if(guideExpanded && guideExpanded.getAttribute("aria-expanded")) {  // has string value of "true" or "false")
-              document.getElementById('qa-guide-sidebar').click();
-            }
-        }
-    }
-  })
-}
-</script>
+
 	
 <script type="text/javascript" id="">(function(a,b){a.QualifiedObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)}})(window,"qualified");
 </script>
@@ -52,9 +39,24 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified Interaction Test 1016 AM </h3>
+<h3> Qualified Interaction Test 1026 AM </h3>
 
-
+<script>
+window.onload = function listenToQualified() {               
+  window.addEventListener('message',function(e){
+    var guideExpanded = document.getElementById("qa-guide-sidebar")
+    if (e.data.value) {
+        if (e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
+          console.log("Qualified message - maximize or opened. Message is:")
+          console.log(e)
+          if(guideExpanded && guideExpanded.getAttribute("aria-expanded")) {  // has string value of "true" or "false")
+            document.getElementById('qa-guide-sidebar').click();
+          }
+        }
+    }
+  })
+}
+</script>
 
 
 
