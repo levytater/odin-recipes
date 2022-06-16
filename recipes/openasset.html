@@ -14,7 +14,21 @@
 	  height: 1000px;
 	   } 
     </style>
-    
+ 
+<script>
+window.onload = function listenToQualified() {               
+  window.addEventListener('message',function(e){
+    var guideExpanded = document.getElementById("qa-guide-sidebar")
+    if (e.data.value) {
+        if (e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
+            if(guideExpanded && guideExpanded.getAttribute("aria-expanded")) {  // has string value of "true" or "false")
+              document.getElementById('qa-guide-sidebar').click();
+            }
+        }
+    }
+  })
+}
+</script>
 	
 <script type="text/javascript" id="">(function(a,b){a.QualifiedObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)}})(window,"qualified");
 </script>
@@ -26,7 +40,7 @@
     x=u.getElementsByTagName(k)[0];o.async=1;o.src=e;x.parentNode.insertBefore(o,x)
     })(window,document,'script', 'https://cdn-app.pathfactory.com/production/jukebox/current/jukebox.js' ,"pf");
       pf('create', 'LB-DD9FA71B-10398');
-      
+ 
   </script>    
 
 
@@ -38,21 +52,9 @@
 <body>
 
     
-<h3> Qualified Interaction Test 1002 AM </h3>
+<h3> Qualified Interaction Test 1016 AM </h3>
 
-<script>
-window.onload = function listenToQualified() {               
-  window.addEventListener('message',function(e){
-    var guideExpanded = document.getElementById("qa-guide-sidebar")
-    if (e.data.value) {
-      if (e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
-          if(guideExpanded && guideExpanded.getAttribute("aria-expanded")) {  // has string value of "true" or "false")
-              document.getElementById('qa-guide-sidebar').click();
-      }
-    }
-}
 
-</script>
 
 
 
