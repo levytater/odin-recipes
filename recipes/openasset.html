@@ -43,14 +43,15 @@
 <script>
 window.onload = function listenToQualified() {               
   window.addEventListener('message',function(e){
+    var guideExpanded = document.getElementById("qa-guide-sidebar")
     if (e.data.value) {
-      var guideExpanded = document.getElementById("qa-guide-sidebar").getAttribute("aria-expanded") // has string value of "true" or "false"
-      if ((e.data.value.name == 'maximize' || e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened') && guideExpanded == "true") {
-        document.getElementById('qa-guide-sidebar').click();
+      if ((e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
+          if(guideExpanded && guideExpanded.getAttribute("aria-expanded")) {  // has string value of "true" or "false")
+              document.getElementById('qa-guide-sidebar').click();
       }
     }
-  })
 }
+
 </script>
 
 
