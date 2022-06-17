@@ -35,12 +35,15 @@
 
 function listenToAllQualified() {
   window.addEventListener('message',function(e){
-    console.log("listening to all qualified");
+    if (e.data.value.name == 'resize' && e.data.value.data.height > 100) {
+    console.log("listening to maximize qualified");
     console.log(e)
+  }
 })
 }
 listenToAllQualified()
 
+/*
 window.onload = function listenToQualified() {
   console.log("onload listenToQualified function ran")       
   var guideExpanded = document.getElementById("qa-guide-sidebar")
@@ -56,6 +59,7 @@ window.onload = function listenToQualified() {
     }
   })
 }
+*/
 </script>	
 	
 </head>
@@ -63,7 +67,7 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified Interaction Test 1114 AM </h3>
+<h3> Qualified Interaction Test 1238 pM </h3>
 
 
 
