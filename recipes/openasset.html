@@ -43,23 +43,20 @@ function listenToAllQualified() {
 }
 listenToAllQualified()
 
-/*
 window.onload = function listenToQualified() {
   console.log("onload listenToQualified function ran")       
   var guideExpanded = document.getElementById("qa-guide-sidebar")
   window.addEventListener('message',function(e){
     if (e.data.value) {
-        if (e.data.value.name == 'maximize' || (e.data.value.name == 'clientEvent' && e.data.value.data == 'messengerOpened')) {
+      if (e.data.value.name == 'resize' && e.data.value.data.height > 100) {
           console.log("Qualified message - maximize or opened. Message is:")
-          console.log(e)
-          if(guideExpanded && guideExpanded.getAttribute("aria-expanded")) {  // has string value of "true" or "false")
+          if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true") {  // has string value of "true" or "false")
             document.getElementById('qa-guide-sidebar').click();
           }
         }
     }
   })
 }
-*/
 </script>	
 	
 </head>
@@ -67,7 +64,7 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified Interaction Test 1238 pM </h3>
+<h3> Qualified Interaction Test 1242 PM </h3>
 
 
 
