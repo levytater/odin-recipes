@@ -33,11 +33,9 @@
       lbhq('create', 'LB-DD9FA71B-10398');                      
   </script>
 	
-<!-- Making Card Promoter Open in Overlay -->
-    <link href="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.css" rel="stylesheet" type="text/css" />
 <script>
 	var runtimes = 0
-handleJukeboxDispatchedEventsCAOverlay=function(event){
+handleJukeboxDispatchedEventsCAOverlay = function(event){
 	switch(event.detail.eventName){
 		case"click_show":
 			if(event.detail.promoter=='card'&&runtimes == 0) {
@@ -47,14 +45,10 @@ handleJukeboxDispatchedEventsCAOverlay=function(event){
 					newhref=newhref+(newhref.indexOf("?")>-1?"&":"?")+"lb-mode=overlay&lb-width=95%25&lb-height=95%25"
 					l.setAttribute("href",newhref);
 				});
-				var overlayjs=document.createElement('script');
-				overlayjs.setAttribute('type','text/javascript');
-				overlayjs.setAttribute('async',true);
-				overlayjs.setAttribute('src','https://app.cdn.lookbookhq.com/libraries/overlay/overlay.js');
-				document.getElementsByTagName('head')[0].appendChild(overlayjs);}
 			runtimes = 1
-break;
-	};
+			break;
+			};
+	}
 }
 ;window.addEventListener("pf_event",this.handleJukeboxDispatchedEventsCAOverlay,false); 
     </script>
