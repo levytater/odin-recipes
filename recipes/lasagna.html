@@ -26,21 +26,27 @@
     })(window,document,'script','https://cdn-app.pathfactory.com/production/jukebox/current/jukebox.js','lbhq');
       lbhq('create', 'LB-DD9FA71B-10398');   
     </script>
+     <script src="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.min.js" async ></script> 
+     <link href="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <script> 
-        var windowlocation = window.location;
-        console.log(windowlocation);
-        var parentlocation = window.parent.location;
-        console.log(parentlocation);
-        window.parent.postMessage({ parentlocation: parentlocation }, document.location.origin);
+    	function setCookieConsent() {
+    		setTimeout(function() {
+    			console.log("Cookie Consent Approved");
+    			cookieResponse(true);
+    		}, 7000)
+    	}
+
+    	setCookieConsent()
+
     </script>
-    <div class "nav">
+    <div class= "nav">
         <a href = "../index.html">Home</a>
     </div>
     <div id = "recipeimage">
-        <h1>Lasagna!</h1>
+        <h1>Lasagna 1201 PM</h1>
         <br>
         <img src = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2535739.jpg&w=913&h=913&c=sc&poi=face&q=85" id = "lasagna"/>
     <div id = "recipedescription">
@@ -59,6 +65,8 @@
             <li>Mentally Prepare</li>
             <li>Put it together</li>
             <li>Put it in the oven</li>
+        	<li> <a href="https://www.domo.com/resources/example-track-slug2/domo-integration-cloud?lb-mode=overlay"> Check out some great content (href link) </a> </li>
+			<li> <a href="#" data-lookbook-overlay-href="https://www.domo.com/resources/example-track-slug2/domo-integration-cloud">Even more awesome content here (data attribute link)</a>
         </ol>
             
         </p>
