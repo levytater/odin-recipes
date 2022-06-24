@@ -15,7 +15,7 @@
 	   } 
     </style>
  
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.js" integrity="sha512-y8WYSN12qGaGi9+1wK2j66nQYfb/mAhEENjhABAA68bc0ZFRqEfnzf4l/zabQxLtvQrExYZJAOEcxpW1whCGOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
 <script type="text/javascript" id="">(function(a,b){a.QualifiedObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)}})(window,"qualified");
 </script>
@@ -59,6 +59,13 @@ window.onload = function listenToQualified() {
   })
 }
 
+ document.arrive("qa-guide-sidebar", function(){
+      if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) {
+        document.getElementById('qa-guide-sidebar').click();
+      }
+    }
+
+	
 </script>	
 	
 </head>
