@@ -59,14 +59,16 @@ window.onload = function listenToQualified() {
   })
 }
 
- document.arrive("#qa-guide-sidebar[aria-expanded*='true']", function(){
+ document.arrive("#qa-guide-sidebar", function(){
       console.log("Guide arrived");
- /*     if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
+      var guideExpanded = document.getElementById("qa-guide-sidebar")
+      if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
        
-      } */
+      } 
        document.getElementById('qa-guide-sidebar').click();
     }
 );
+</script>
 	
 </script>	
 	
@@ -75,7 +77,7 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified Interaction Test 448 PM </h3>
+<h3> Qualified Interaction Test 456 PM </h3>
 
 
 
