@@ -42,9 +42,9 @@ window.onload = function listenToQualified() {
       console.log("Guide arrived");
       var guideExpanded = document.getElementById("qa-guide-sidebar")
       if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
-       
+      	   document.getElementById('qa-guide-sidebar').click(); 
       } 
-       document.getElementById('qa-guide-sidebar').click();
+
     }
 );
 </script>	
