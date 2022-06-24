@@ -3,13 +3,14 @@
     <meta charset="UTF-9">
     
     <title>Qualified Chat + PF Guide Testing</title>
+
 <!-- Beginning of Qualified Script -->
 <script type="text/javascript" id="">(function(a,b){a.QualifiedObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)}})(window,"qualified");
 </script>
 <script type="text/javascript" id="" src="https://js.qualified.com/qualified.js?token=n4rSKYREQbkU5CRH"></script>
 <!-- End of Qualified Script -->
-	
-<!--Beginning of PF Jukebox Script for Guide -->	
+  
+<!--Beginning of PF Jukebox Script for Guide -->  
 <script type="text/javascript">
     (function(j,u,k,e,b,o,x){j["pfObject"]=b;j[b]=j[b]||function(){
     (j[b].q=j[b].q||[]).push(arguments)},j[b].l=1*new Date();o=u.createElement(k),
@@ -19,13 +20,12 @@
 </script>    
 <!--End of PF Jukebox Script for Guide -->
 
-<!--On Arrive JS for Guide -->	
+<!--On Arrive JS for Guide -->  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.js" integrity="sha512-y8WYSN12qGaGi9+1wK2j66nQYfb/mAhEENjhABAA68bc0ZFRqEfnzf4l/zabQxLtvQrExYZJAOEcxpW1whCGOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!--Beginning of Custom Script for Guide + Qualified not to overlap -->	
+<!--Beginning of Custom Script for Guide + Qualified not to overlap --> 
 <script>
 window.onload = function listenToQualified() {
-  console.log("onload listenToQualified function ran")       
   window.addEventListener('message',function(e){
     if (e.data.value) {
       if (e.data.value.name == 'resize' && e.data.value.data.height > 100) {
@@ -39,24 +39,23 @@ window.onload = function listenToQualified() {
 }
 
  document.arrive("#qa-guide-sidebar", function(){
-      console.log("Guide arrived");
       var guideExpanded = document.getElementById("qa-guide-sidebar")
       if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
-      	   document.getElementById('qa-guide-sidebar').click(); 
+           document.getElementById('qa-guide-sidebar').click(); 
       } 
 
     }
 );
-</script>	
+</script> 
 
-<!--End of Custom Script for Guide + Qualified not to overlap -->		
+<!--End of Custom Script for Guide + Qualified not to overlap -->   
 
 </head>
 
 <body>
 
     
-<h3> Qualified + Guide Interaction Test 514 PM </h3>
+<h3> Qualified + Guide Interaction Test 520 PM </h3>
 
 
 
