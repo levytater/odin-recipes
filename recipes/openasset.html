@@ -39,9 +39,11 @@ window.onload = function listenToQualified() {
 }
 
  document.arrive("#qa-guide-sidebar", function(){
-      var guideExpanded = document.getElementById("qa-guide-sidebar")
-      if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
-           document.getElementById('qa-guide-sidebar').click(); 
+     console.log("Guide arrived");
+      var guideWidget = document.getElementById("qa-guide-sidebar")
+      if(guideWidget && guideWidget.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
+          console.log("Guide expanded and chat open");
+          document.getElementById('qa-guide-sidebar').click(); 
       } 
 
     }
@@ -55,7 +57,7 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified + Guide Interaction Test 520 PM </h3>
+<h3> Qualified + Guide Interaction Test 726 PM </h3>
 
 
 
