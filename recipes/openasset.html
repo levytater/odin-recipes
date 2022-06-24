@@ -32,26 +32,15 @@
 
 
 <script>
-/*
-function listenToAllQualified() {
-  window.addEventListener('message',function(e){
-    if (e.data.value.name == 'resize' && e.data.value.data.height > 100) {
-    console.log("listening to maximize qualified");
-    console.log(e)
-  }
-})
-}
-listenToAllQualified()
-*/	
+
+
 window.onload = function listenToQualified() {
   console.log("onload listenToQualified function ran")       
   window.addEventListener('message',function(e){
     if (e.data.value) {
       if (e.data.value.name == 'resize' && e.data.value.data.height > 100) {
-          console.log("Qualified message - maximize or opened. Message is:")
           var guideExpanded = document.getElementById("qa-guide-sidebar")
           if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true") {  // has string value of "true" or "false")
-            console.log("guide is expanded");
             document.getElementById('qa-guide-sidebar').click();
           }
         }
@@ -68,8 +57,6 @@ window.onload = function listenToQualified() {
        document.getElementById('qa-guide-sidebar').click();
     }
 );
-</script>
-	
 </script>	
 	
 </head>
@@ -77,7 +64,7 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified Interaction Test 456 PM </h3>
+<h3> Qualified Interaction Test 500 PM </h3>
 
 
 
