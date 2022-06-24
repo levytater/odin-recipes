@@ -49,7 +49,7 @@ window.onload = function listenToQualified() {
     }
 );
 */
-document.arrive("aria-expanded='true'", function(){
+document.arrive("[aria-expanded='true']", function(){
       var guideExpanded = document.getElementById("qa-guide-sidebar")
       if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
           console.log("Guide expanded and chat open"); 
