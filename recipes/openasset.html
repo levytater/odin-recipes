@@ -3,7 +3,13 @@
     <meta charset="UTF-9">
     
     <title>Qualified Chat + PF Guide Testing</title>
-
+<!-- Move Guide Up Not to overlap when both minimized -->
+<style>
+	#qa-guide {
+		bottom: 100px !important;
+	}
+</style>
+	
 <!-- Beginning of Qualified Script -->
 <script type="text/javascript" id="">(function(a,b){a.QualifiedObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)}})(window,"qualified");
 </script>
@@ -30,26 +36,14 @@ window.onload = function listenToQualified() {
     if (e.data.value) {
       if (e.data.value.name == 'resize' && e.data.value.data.height > 100) {
           var guideExpanded = document.getElementById("qa-guide-sidebar")
-          if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true") {  // has string value of "true" or "false")
+          if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true") { 
             document.getElementById('qa-guide-sidebar').click();
 			  }
 		  }
 		}
 	  })
 	}
-
-  /*
- document.arrive("#qa-guide-sidebar", function(){
-     console.log("Guide arrived");
-      var guideWidget = document.getElementById("qa-guide-sidebar")
-      if(guideWidget && guideWidget.getAttribute("aria-expanded") == "true" && qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
-          console.log("Guide expanded and chat open");
-          document.getElementById('qa-guide-sidebar').click(); 
-      } 
-
-    }
-);
-*/
+	
 	document.arrive('#qa-guide-sidebar', function(){
 		console.log("inside arrive")
 		  if(qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
@@ -60,9 +54,7 @@ window.onload = function listenToQualified() {
 				}, 500); 
 		  }
 	});
-
 </script> 
-
 <!--End of Custom Script for Guide + Qualified not to overlap -->   
 
 </head>
@@ -70,7 +62,7 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified + Guide Interaction Test 813 PM </h3>
+<h3> Qualified + Guide Interaction Test 917 AM </h3>
 
 
 
