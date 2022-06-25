@@ -50,11 +50,14 @@ window.onload = function listenToQualified() {
 );
 */
 
-    document.arrive("button[aria-expanded='true']", function(){
+document.arrive("#qa-guide-sidebar", function(){
       if(qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
-           document.getElementById('qa-guide-sidebar').click(); 
+           setTimeout(function() {
+            document.getElementById('qa-guide-sidebar').click() 
+            }, 500); 
       }
     });
+
 </script> 
 
 <!--End of Custom Script for Guide + Qualified not to overlap -->   
@@ -64,7 +67,7 @@ window.onload = function listenToQualified() {
 <body>
 
     
-<h3> Qualified + Guide Interaction Test 751 PM </h3>
+<h3> Qualified + Guide Interaction Test 800 PM </h3>
 
 
 
