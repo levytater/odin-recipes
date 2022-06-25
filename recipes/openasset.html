@@ -3,12 +3,14 @@
     <meta charset="UTF-9">
     
     <title>Qualified Chat + PF Guide Testing</title>
-<!-- Move Guide Up Not to overlap when both minimized -->
+<!-- Beginning of CSS to Move Guide Up Not to overlap when both minimized -->
 <style>
 	#qa-guide {
 		bottom: 100px !important;
 	}
 </style>
+<!-- End of CSS to Move Guide Up Not to overlap when both minimized -->
+	
 	
 <!-- Beginning of Qualified Script -->
 <script type="text/javascript" id="">(function(a,b){a.QualifiedObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)}})(window,"qualified");
@@ -45,13 +47,10 @@ window.onload = function listenToQualified() {
 	}
 	
 	document.arrive('#qa-guide-sidebar', function(){
-		console.log("inside arrive")
 		  if(qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
-              console.log("inside QChat Height check")
 			   setTimeout(function() {
-				console.log("inside timeout function");
-                   document.getElementById('qa-guide-sidebar').click() 
-				}, 500); 
+                   		document.getElementById('qa-guide-sidebar').click() 
+			   }, 500); 
 		  }
 	});
 </script> 
