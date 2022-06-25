@@ -32,12 +32,13 @@ window.onload = function listenToQualified() {
           var guideExpanded = document.getElementById("qa-guide-sidebar")
           if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true") {  // has string value of "true" or "false")
             document.getElementById('qa-guide-sidebar').click();
-          }
-        }
-    }
-  })
-}
-/*
+			  }
+		  }
+		}
+	  })
+	}
+
+  /*
  document.arrive("#qa-guide-sidebar", function(){
      console.log("Guide arrived");
       var guideWidget = document.getElementById("qa-guide-sidebar")
@@ -50,13 +51,16 @@ window.onload = function listenToQualified() {
 );
 */
 
-document.arrive("#qa-guide-sidebar", function(){
-      if(qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
-           setTimeout(function() {
-            document.getElementById('qa-guide-sidebar').click() 
-            }, 500); 
-      }
-    });
+	document.arrive("#qa-guide-sidebar", function(){
+		console.log("inside arrive")
+		  if(qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
+              console.log("inside QChat Height check")
+			   setTimeout(function() {
+				console.log("inside timeout function");
+                   document.getElementById('qa-guide-sidebar').click() 
+				}, 500); 
+		  }
+	});
 
 </script> 
 
@@ -67,7 +71,7 @@ document.arrive("#qa-guide-sidebar", function(){
 <body>
 
     
-<h3> Qualified + Guide Interaction Test 800 PM </h3>
+<h3> Qualified + Guide Interaction Test 810 PM </h3>
 
 
 
