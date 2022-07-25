@@ -17,6 +17,59 @@
       
   </script>
     
+ <!-- Beginning of CSS to Move Guide Up Not to overlap when both minimized -->
+<style>
+	#qa-guide {
+		bottom: 100px !important;
+	}
+</style>
+<!-- End of CSS to Move Guide Up Not to overlap when both minimized -->
+	
+	
+<!-- Beginning of Qualified Script -->
+<script type="text/javascript" id="">(function(a,b){a.QualifiedObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)}})(window,"qualified");
+</script>
+<script type="text/javascript" id="" src="https://js.qualified.com/qualified.js?token=n4rSKYREQbkU5CRH"></script>
+<!-- End of Qualified Script -->
+  
+<!--Beginning of PF Jukebox Script for Guide -->  
+<script type="text/javascript">
+    (function(j,u,k,e,b,o,x){j["pfObject"]=b;j[b]=j[b]||function(){
+    (j[b].q=j[b].q||[]).push(arguments)},j[b].l=1*new Date();o=u.createElement(k),
+    x=u.getElementsByTagName(k)[0];o.async=1;o.src=e;x.parentNode.insertBefore(o,x)
+    })(window,document,'script', 'https://cdn-app.pathfactory.com/production/jukebox/current/jukebox.js' ,"pf");
+      pf('create', 'LB-DD9FA71B-10398');
+</script>    
+<!--End of PF Jukebox Script for Guide -->
+
+<!--On Arrive JS for Guide -->  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.js" integrity="sha512-y8WYSN12qGaGi9+1wK2j66nQYfb/mAhEENjhABAA68bc0ZFRqEfnzf4l/zabQxLtvQrExYZJAOEcxpW1whCGOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--Beginning of Custom Script for Guide + Qualified not to overlap --> 
+<script>
+window.onload = function listenToQualified() {
+  window.addEventListener('message',function(e){
+    if (e.data.value) {
+      if (e.data.value.name == 'resize' && e.data.value.data.height > 100) {
+          var guideExpanded = document.getElementById("qa-guide-sidebar")
+          if(guideExpanded && guideExpanded.getAttribute("aria-expanded") == "true") { 
+            document.getElementById('qa-guide-sidebar').click();
+			  }
+		  }
+		}
+	  })
+	}
+	
+	document.arrive('#qa-guide-sidebar', function(){
+		  if(qualified.widget.iframeManager.childFrameCurrentHeight > 100) { 
+			   setTimeout(function() {
+                   		document.getElementById('qa-guide-sidebar').click() 
+			   }, 500); 
+		  }
+	});
+</script> 
+<!--End of Custom Script for Guide + Qualified not to overlap -->       
+    
 </head>
 
 <body>
@@ -24,7 +77,7 @@
         <a href = "../index.html">Home</a>
     </div>
     <div id = "recipeimage">
-        <h1>Pizza!</h1>
+        <h1>Pizza! 354 </h1>
         <br>
         <img src = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6670770.jpg&w=596&h=792&c=sc&poi=face&q=85" id = "pizza"/>
     <div id = "recipedescription">
