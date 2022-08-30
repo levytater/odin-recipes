@@ -2,49 +2,60 @@
 <head>
     <meta charset="UTF-9">
     <title>Snow Test Form</title>
+	
+	<!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('kbmrmch9w7gd');
+</script>
+<!-- End of Async Drift Code -->	
+
+<!-- Beginning of Hide Drift when in PF Overlay -->
+<style type="text/plain" id="hideDrift">
+        div#drift-frame-controller {
+            display: none;
+        }
+</style>
+
+
+<script>
+        window.onload = () => {
+          if (document.referrer.indexOf('https://levshq.lookbookhq.com') > -1) {
+                document.querySelector('#hideDrift').type = 'text/css'
+		  console.log("trying to hide Drift");         
+          };
+        };
+		
+	
+</script>
+	
 </head>
 <body>
-	<h1> Testing Scripts</h1>
- <style>
-    #mktoForm_5160 {
-        margin: auto !important;
-    }
-    * {
-        box-shadow: none !important;
-    }
-    .mktoForm input[type=checkbox] + label:before, .mktoForm input[type=radio] + label:before {
-        box-shadow: none !important;
-    }
-    .mktoButton {
-    background-color: #00b2d5 !important;
-    background-image: none !important;
-    border: 1px solid black !important;
-    margin-top: -5px !important;
-    width: 150px !important;
-    height: 30px !important;
-    margin-left: -50px !important;
-    }
+	<h1> Testing Scripts 412 PM</h1>
+
     
-    
-    
-</style>
-<script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
-<script src="//app-lon04.marketo.com/js/forms2/js/forms2.min.js"></script>
-<form id="mktoForm_5160"></form>
-<script>MktoForms2.loadForm("//app-lon04.marketo.com", "377-PWR-208", 5160, function(form) {
-	form.onSuccess(function(){
-  	var vals = form.vals();
-  	window.parent.postMessage({
-    	conversionUrl: document.location.href,
-    	referrer: document.referrer,
-    	email: vals.Email,
-    	lookbookExternalForm: true
-  	}, "*");
-  	ga('send', 'event', 'forms', 'submit', 'PathFactory');
-  	return true;
-	});
-});
-</script>
 
 
 	
