@@ -100,7 +100,26 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('kbmrmch9w7gd');
 </script>
 <!-- End of Async Drift Code -->	
+
+<!-- Beginning of Hide Drift when in PF Overlay -->
+<style type="text/plain" id="hideDrift">
+        div#drift-frame-controller {
+            display: none;
+        }
+</style>
+
+
+<script>
+        window.onload = () => {
+          if (document.referrer.indexOf('https://www.levshq.lookbookhq.com') > -1) {
+                document.querySelector('#hideDrift').type = 'text/css'
+                
+          };
+        };
+		
 	
+</script>
+	  
 	
 </head>
 
