@@ -3,13 +3,11 @@
     <meta charset="UTF-9">
     <title>Double Drifty</title>
 	
-	<!-- Start of Async Drift Code -->
+<!-- Start of Async Drift Code -->
 <script>
-	var docref = document.referrer.indexOf('lb-mode=overlay');
-	console.log(docref);
-// (!document.referrer.indexOf('https://levshq.lookbookhq.com') > -1) {
-if (window.self == window.top && !document.referrer.indexOf('lb-mode=overlay') > -1) {
-	console.log("not being iFramed, run Drift script");
+if (window.self == window.top && document.referrer.indexOf('levshq.lookbookhq.com') > -1) {
+	console.log("Page not being iFramed, run Drift script");
+
 "use strict";
 
 !function() {
@@ -35,18 +33,17 @@ if (window.self == window.top && !document.referrer.indexOf('lb-mode=overlay') >
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('kbmrmch9w7gd');
 } else {
- console.log("Else - Didn't drop Drift script")
+ console.log("Else - Don't run Drift script")
 }
+
 </script>
 <!-- End of Async Drift Code -->	
 
 </head>
 <body>
-	<h1> Asset inside PathFactory that has Drift running on it 536</h1>
+	<h1> Asset inside PathFactory that has Drift running on it 951</h1>
 
     
-
-
 	
-       
+      
 </body>
