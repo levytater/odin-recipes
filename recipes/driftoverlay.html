@@ -5,7 +5,7 @@
 	
 <!-- Start of Async Drift Code -->
 <script>
-if ((!window.self == window.top) && document.referrer.indexOf('lb-mode=overlay') > -1 ) {
+if (window.self !== window.top && document.referrer.indexOf('lb-mode=overlay') > -1 ) {
 	console.log("Page being iFramed inside PF with an overlay, do not run Drift script");
 } else {
 	console.log("Not in PF iFrame - Run Drift script"); 
@@ -38,7 +38,7 @@ if ((!window.self == window.top) && document.referrer.indexOf('lb-mode=overlay')
 
 </head>
 <body>
-	<h1> Asset inside PathFactory that has Drift running on it 1241</h1>    
+	<h1> Asset inside PathFactory that has Drift running on it 1245</h1>    
 	<p> Website content is here! </p>
       
 </body>
