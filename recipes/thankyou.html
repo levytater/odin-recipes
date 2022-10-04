@@ -3,9 +3,9 @@
     <meta charset="UTF-9">
     <title>Thank you page link to PF 1006</title>
     <script>
-    	var emailAddressvar = localStorage.getItem("email");
-	document.getElementById("pflink").href='https://levshq.lookbookhq.com/c-level?pf_email_b=' + emailAddressvar; 
-    	return false;
+    	var localemail = localStorage.getItem("localemail");
+	var sessionemail = sessionStorage.getItem("sessionemail")  
+	document.getElementById("pflink").href='https://levshq.lookbookhq.com/c-level?pf_email_b=' + sessionemail; 
     </script>
 
 
@@ -14,13 +14,13 @@
 <body>
 	
 	
-	<h1> Redirect 12</h1>
+	<h1> Redirect 325</h1>
 
 
-<a href="https://levshq.lookbookhq.com/c-level" onclick="location.href=this.href+'?pf_email_b='+emailAddressvar; target="_self" return false;">GET THE REPORT</a>
+<a href="https://levshq.lookbookhq.com/c-level" onclick="location.href=this.href+'?pf_email_b='+localemail; target="_self" return false;">GET THE REPORT</a>
 
  
-<a href="https://levshq.lookbookhq.com/c-level" onclick="location.href=this.href+'?pf_email_b='+emailAddressvar;return false;" target="_blank" rel="nofollow noopener noreferrer" class="elementor-button-link elementor-button elementor-size-md" role="button">
+<a href="https://levshq.lookbookhq.com/c-level" onclick="location.href=this.href+'?pf_email_b='+localemail;return false;" target="_blank" rel="nofollow noopener noreferrer" class="elementor-button-link elementor-button elementor-size-md" role="button">
 	<span class="elementor-button-content-wrapper">
 		<span class="elementor-button-text"><span class="anim"></span>GET THE REPORT</span>
 	</span>
