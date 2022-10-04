@@ -30,7 +30,7 @@ MktoForms2.loadForm("//app-sj01.marketo.com", "044-UAP-113", 1935, function(form
     //Add an onSuccess handler
     form.onSuccess(function(values, followUpUrl) {
        var vals = form.vals();
-      localStorage.setItem("email", vals.Email);
+      localStorage.setItem("email", btoa(vals.Email));
       console.log(vals.Email)
         // Take the lead to a different page on successful submit, ignoring the form's configured followUpUrl
         location.href = "https://levytater.github.io/odin-recipes/recipes/thankyou.html";
