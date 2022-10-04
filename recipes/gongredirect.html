@@ -19,7 +19,7 @@
 <body>
 
 
-<h3> PathFactory Marketo Form 1151</h3>
+<h3> PathFactory Marketo Form 329</h3>
 <div class = "mktoform">
 
 <script src="//app-sj01.marketo.com/js/forms2/js/forms2.min.js"></script>
@@ -31,7 +31,8 @@ MktoForms2.loadForm("//app-sj01.marketo.com", "044-UAP-113", 1935, function(form
     form.onSuccess(function(values, followUpUrl) {
        var vals = form.vals();
        var encodedEmail = btoa(vals.Email);
-      localStorage.setItem("email", encodedEmail);
+       localStorage.setItem("localemail", encodedEmail);
+       sessionStorage.setItem("sessionemail", encodedEmail);
         // Take the lead to a different page on successful submit, ignoring the form's configured followUpUrl
         location.href = "https://levytater.github.io/odin-recipes/recipes/thankyou.html";
         // Return false to prevent the submission handler continuing with its own processing
