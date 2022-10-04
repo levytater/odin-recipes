@@ -3,9 +3,14 @@
     <meta charset="UTF-9">
     <title>Thank you page link to PF 1006</title>
     <script>
-    	var localemailvar = localStorage.getItem("localemail");
-	var sessionemailvar = sessionStorage.getItem("sessionemail");
-	document.getElementById("pflink").href='https://levshq.lookbookhq.com/c-level?pf_email_b=' + sessionemailvar; 
+
+		document.addEventListener('DOMContentLoaded', () => {
+           
+    		var localemail = localStorage.getItem("localemail");
+			var sessionemail = sessionStorage.getItem("sessionemail");
+			document.getElementById("pflink").href='https://levshq.lookbookhq.com/c-level?pf_email_b=' + sessionemail; 	
+		});
+		
     </script>
 
 
