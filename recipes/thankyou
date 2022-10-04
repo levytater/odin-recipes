@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-9">
+    <title>Thank you page link to PF 947PM</title>
+    <script>
+    		var emailAddressvar = sessionStorage.getItem("email");
+	</script>
+<a href="2.html" onclick="location.href=this.href+'?key='+scrt_var;return false;">Link</a>
+
+    </script>
+</head>
+<body>
+	
+	
+	<h1> Redirect 945PM</h1>
+
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+
+<a href= "https://levshq.lookbookhq.com/c-level" target="_blank" rel="nofollow noopener noreferrer" class="elementor-button-link elementor-button elementor-size-md" role="button" onclick = "location.href=this.href+ "?lb_email=" + emailAddressvar; return false>
+	<span class="elementor-button-content-wrapper">
+	<span class="elementor-button-text"><span class="anim"></span>GET THE REPORT</span>
+		</span>
+					</a>
+		</div>
+				</div>
+
+
+  
+  
+  
+  
+</body>
