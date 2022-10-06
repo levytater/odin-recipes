@@ -3,9 +3,8 @@
     <meta charset="UTF-9">
     <title>Thank you page link to PF 722</title>
     <script>
-
-		document.addEventListener('DOMContentLoaded', () => {
-           
+	document.addEventListener('DOMContentLoaded', () => {
+         
     		var localemailvar = localStorage.getItem("localemail");
 			var sessionemailvar = sessionStorage.getItem("sessionemail");
 			document.getElementById("pflink").href='https://levshq.lookbookhq.com/c-level?pf_email_b=' + sessionemailvar; 	
@@ -19,12 +18,11 @@
 <body>
 	
 	
-	<h1> Redirect 1046</h1>
+	<h1> Redirect 1054</h1>
 
 <a href="https://levshq.lookbookhq.com/c-level" id="pflink" target="_blank">Get Report</a>
-	
-<a href="https://levshq.lookbookhq.com/c-level" target="_self" onclick="location.href=this.href+'?pf_email_b='+localemailvar; return false;>Link 2</a>
-
+<p>
+<a href="https://levshq.lookbookhq.com/c-level" target="_blank" onclick="location.href=this.href+'?pf_email_b='+localemailvar; return false">Link2</a>
 
   
 </body>
