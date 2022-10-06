@@ -20,30 +20,24 @@
 
 
 <h3> PathFactory Marketo Form 329</h3>
-<div class = "mktoform">
 
+<div class = "mktoform">
 <script src="//app-sj01.marketo.com/js/forms2/js/forms2.min.js"></script>
 <form id="mktoForm_1935"></form>
-
 <script>
-MktoForms2.loadForm("//app-sj01.marketo.com", "044-UAP-113", 1935, function(form) {
-    //Add an onSuccess handler
-    form.onSuccess(function(values, followUpUrl) {
-       var vals = form.vals();
-       var encodedEmail = btoa(vals.Email);
-       localStorage.setItem("localemail", encodedEmail);
-       sessionStorage.setItem("sessionemail", encodedEmail);
-        // Take the lead to a different page on successful submit, ignoring the form's configured followUpUrl
-        location.href = "https://levytater.github.io/odin-recipes/recipes/thankyou.html";
-        // Return false to prevent the submission handler continuing with its own processing
-        return false;
+    MktoForms2.loadForm("//app-sj01.marketo.com", "044-UAP-113", 1935, function(form) {
+        //Add an onSuccess handler
+        form.onSuccess(function(values, followUpUrl) {
+           var vals = form.vals();
+           var encodedEmail = btoa(vals.Email);
+           localStorage.setItem("localemail", encodedEmail);
+           sessionStorage.setItem("sessionemail", encodedEmail);
+            // Take the lead to a different page on successful submit, ignoring the form's configured followUpUrl
+            location.href = "https://levytater.github.io/odin-recipes/recipes/thankyou.html";
+            // Return false to prevent the submission handler continuing with its own processing
+            return false;
     });
 });
-
-
 </script>
-
-
-
 </div>
 </body>
