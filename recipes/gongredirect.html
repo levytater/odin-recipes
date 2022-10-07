@@ -30,7 +30,6 @@
         form.onSuccess(function(values, followUpUrl) {
            var vals = form.vals();
            var encodedEmail = btoa(vals.Email);
-           localStorage.setItem("localemail", encodedEmail);
            sessionStorage.setItem("sessionemail", encodedEmail);
             // Take the lead to a different page on successful submit, ignoring the form's configured followUpUrl
             location.href = "https://levytater.github.io/odin-recipes/recipes/thankyou.html";
