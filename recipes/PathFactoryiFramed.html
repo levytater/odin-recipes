@@ -6,13 +6,10 @@
     <title>PathFactory iFramed</title>
     <style>
 
-a.lb-inpage-item > img {
+a.lb-inpage-item > img, a.lb-inpage-item > div {
 	border-radius: 0.5rem !important;
 	    }
-	    
 
-
-  }
     </style>
 
            <script src="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.min.js" async ></script> <link href="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.min.css" rel="stylesheet" type="text/css" />
@@ -23,27 +20,7 @@ a.lb-inpage-item > img {
     })(window,document,'script','https://cdn-app.pathfactory.com/production/jukebox/current/jukebox.js','lbhq');
       lbhq('create', 'LB-DD9FA71B-10398');                      
   </script>
-	
-<script>
-	var runtimes = 0
-handleJukeboxDispatchedEventsCAOverlay = function(event){
-	switch(event.detail.eventName){
-		case"click_show":
-			if(event.detail.promoter=='card'&&runtimes == 0) {
-				var links = document.querySelectorAll("div#qa-card-promoter-carousel a");
-				links.forEach(function(l){
-					var newhref=l.getAttribute("href");
-					newhref=newhref+(newhref.indexOf("?")>-1?"&":"?")+"lb-mode=overlay&lb-width=95%25&lb-height=95%25"
-					l.setAttribute("href",newhref);
-				});
-			runtimes = 1
-			break;
-			};
-	}
-}
-;window.addEventListener("pf_event",this.handleJukeboxDispatchedEventsCAOverlay,false); 
-    </script>
-	<!-- END - Making Card Promoter Open in Overlay -->
+
     
 </head>
 
@@ -55,7 +32,7 @@ handleJukeboxDispatchedEventsCAOverlay = function(event){
     </div>
     
     
-        <h1> More awesome content for you! 1158 AM</h1>
+        <h1> More awesome content for you! 1208 PM</h1>
         <ul>
         <li> <a href="https://www.domo.com/resources/example-track-slug2/domo-integration-cloud?lb-mode=overlay"> Check out some great content (href link) </a> </li>
 	<li> <a href="#" data-lookbook-overlay-href="https://www.domo.com/resources/example-track-slug2/domo-integration-cloud">Even more awesome content here (data attribute link)</a>
