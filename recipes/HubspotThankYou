@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-9">
+    <title>Hubspot Thank You Test</title>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    var emailFill = localStorage.getItem("emaillabel");  
+    var url = document.getElementById("A tag ID Here").href; //<a> tag ID here
+    var decodedEmail =  atob(emailFill);
+    
+if (url.indexOf('?') > -1){
+  document.getElementById("pflink").href = url + '&lb-mode=overlay&lb_email=' + decodedEmail //<a> tag ID here
+}else{
+  document.getElementById("pflink").href = url + '?lb-mode=overlay&lb_email=' + decodedEmail //<a> tag ID here
+}
+localStorage.removeItem("emaillabel");
+    });
+   
+</script>
+
+
+
+</head>
+<body>
+	
+<h1> Hubspot Thank You - PathFactory Overlay 958</h1>
+
+  
+  
+  
+  
+  
+	<h1> Link to PF</h1>
+
+<a href="https://levshq.lookbookhq.com/c-level" id="pflink">Get Report</a>
+
+
+
+</body>
