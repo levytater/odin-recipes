@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-9">
+    
+    <title>Hubspot Form Testing</title>
+    
+<script>
+    window.addEventListener('message', event => {
+        if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+            var frmemail = event.data.data
+            var emailCollected = frmemail.find((ele) => ele.name === 'email').value
+            var encodedString = btoa(emailCollected);
+            localStorage.setItem("emaillabel", encodedString);
+            location.href = "TY Page URL Here"; //your TY page URL here
+            return false;
+        }
+    });
+</script>    
+    
+    <style>
+ .mktoform {
+    width: 440px;
+    margin: 50px;
+       }
+    </style>
+    
+</head>
+
+<body>
+
+
+<h3> Hubspot Form Testing 954</h3>
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "6608541",
+    formId: "7088e46a-42a9-474e-87d3-2b8f09043c7d"
+  });
+</script>
+</body>
